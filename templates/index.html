@@ -5,7 +5,7 @@
 
 {% block page_content %}
 <div class="page-header">
-    <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
+    <h1>Hello {% if name %}{{ name }}! Welcome to PRA2 Docker{% else %}Stranger{% endif %}!</h1>
     {% if is_uoft %}
         <h2>Your UofT email is {{ email }}</h2>
     {% elif email and not is_uoft %}
@@ -20,3 +20,4 @@
 </div>
 {% endfor %}
 {% endblock %}
+
